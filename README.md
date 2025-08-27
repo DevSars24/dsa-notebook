@@ -1,3 +1,11 @@
+
+## 📊 My Profiles
+- **LeetCode**: [Visit Profile](https://leetcode.com/u/VXGxeHwq/)  
+- **GeeksforGeeks**: [Visit Profile](https://www.geeksforgeeks.org/user/saurabhsinvqv3/)  
+- **LinkedIn**: [Connect with me](https://www.linkedin.com/in/saurabh-singh-rajput-25639a306/)  
+- **X (Twitter)**: [Follow me](https://x.com/SaurabhSin15850)  
+
+
 ```bash
 # 🚀 My DSA Journey
 
@@ -13,15 +21,6 @@ I’ve already solved a good number of problems on LeetCode and GeeksforGeeks, b
 - `Easy/` → Beginner-friendly problems with explanations  
 - `Medium/` → Intermediate-level challenges  
 - `Hard/` → Advanced problems, optimized solutions  
-
----
-
-## 📊 My Profiles
-- **LeetCode**: [Visit Profile](https://leetcode.com/u/VXGxeHwq/)  
-- **GeeksforGeeks**: [Visit Profile](https://www.geeksforgeeks.org/user/saurabhsinvqv3/)  
-- **LinkedIn**: [Connect with me](https://www.linkedin.com/in/saurabh-singh-rajput-25639a306/)  
-- **X (Twitter)**: [Follow me](https://x.com/SaurabhSin15850)  
-
 ---
 
 ## 🤝 Connect
