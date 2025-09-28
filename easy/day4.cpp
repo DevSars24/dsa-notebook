@@ -1,5 +1,3 @@
-```bash
-
 question link here is ->
 https://leetcode.com/problems/house-robber/description/
 
