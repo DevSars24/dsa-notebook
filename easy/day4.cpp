@@ -1,3 +1,8 @@
+```bash
+
+question link here is ->
+https://leetcode.com/problems/house-robber/description/
+
 class Solution {
 public:
     int dp[101]; // constraint ke hisaab se enough size
@@ -25,19 +30,7 @@ public:
         return solve(nums, 0, n);
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 📝 Dry Run with Example
 
 Input: nums = {2, 7, 9, 3, 1}
