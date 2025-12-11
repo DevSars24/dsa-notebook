@@ -1,7 +1,7 @@
 // Weighted Uniform Strings - Fully Documented Solution
 // Problem Link: https://www.hackerrank.com/challenges/weighted-uniform-string/problem
-// -----------------------------------------------------------------------------
-//AUTHOR: Saurabh Singh (Your documented .cpp as requested)
+
+
 //DESCRIPTION:
 // A uniform substring is made of SAME CHARACTER repeated consecutively.
 // Example: "a", "aa", "aaa" are uniform. But "ab", "aba" are not.
