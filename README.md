@@ -28,7 +28,7 @@ I’ve already solved a good number of problems on LeetCode and GeeksforGeeks, b
 I believe in documenting and sharing the journey.  
 If you like my work ethic, don’t forget to **⭐️ this repo** and follow me on GitHub for more!  
 
-👉 [My GitHub Profile](https://github.com/your-username)  
+
 
 ---
 
