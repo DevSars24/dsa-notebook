@@ -1,7 +1,7 @@
 # /*
 
 Problem: Remove Zero Sum Consecutive Nodes from Linked List
-Link   : [https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/)
+Link   : [https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/]
 Level  : Medium
 Topic  : Linked List + Prefix Sum + HashMap
 ===========================================
