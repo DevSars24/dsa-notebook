@@ -23,10 +23,6 @@ Rules:
 
 -----------------------------------------------------------
 
-🧠 Intuition (Hinglish / WhatsApp style)
----------------------------------------
-Bhai simple soch 👇
-
 Har train ka ek time interval hota hai:
 [arrival , departure]
 
