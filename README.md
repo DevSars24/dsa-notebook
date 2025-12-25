@@ -7,40 +7,81 @@
 - **X (Twitter)**: [Follow me](https://x.com/SaurabhSin15850)  
 
 
-```bash
-# 🚀 My DSA Journey
+```md
+# 🚀 DSA Journey
 
-Welcome to my **DSA Journey Repository**!  
-I’m dividing my DSA practice into **Easy, Medium, and Hard** sections, documenting everything here so that I (and anyone learning) can track progress clearly.
+Welcome to our **DSA Journey Repository** 👋  
+This repository documents our **consistent learning and problem-solving journey in Data Structures & Algorithms (DSA)**.
 
-While being busy in development projects, I’ll still dedicate consistent time to **Data Structures and Algorithms (DSA)**.  
-I’ve already solved a good number of problems on LeetCode and GeeksforGeeks, but from now onwards, I will **document each portion** here.
+We are actively dividing our practice into **Easy, Medium, and Hard** sections and maintaining clean, well-structured solutions here.
+
+This repo is a **shared learning effort**, where we grow together by solving, documenting, and revising DSA problems regularly.
 
 ---
 
-## 📂 Structure
-- `Easy/` → Beginner-friendly problems with explanations  
-- `Medium/` → Intermediate-level challenges  
-- `Hard/` → Advanced problems, optimized solutions  
+## 👥 Contributors
+
+- **Saurabh Singh**  
+  GitHub: https://github.com/DevSars24  
+
+- **Rahul Yadav** (IIT Bhagalpur)  
+  GitHub: https://github.com/ryadav206  
+
+We are learning and contributing **together**, pushing each other to stay consistent and disciplined.
+
 ---
 
-## 🤝 Connect
-I believe in documenting and sharing the journey.  
-If you like my work ethic, don’t forget to **⭐️ this repo** and follow me on GitHub for more!  
+## 📂 Repository Structure
 
+```
+```
+dsa-journey/
+┣ 📂 Easy/    → Beginner-friendly problems with clear logic
+┣ 📂 Medium/  → Intermediate problems and optimised approaches
+┣ 📂 Hard/    → Advanced problems and edge-case heavy solutions
+┗ 📄 README.md
 
+```
+
+---
+
+## 🎯 Purpose
+
+While being actively involved in **development projects**, we are committed to:
+- Maintaining **strong DSA fundamentals**
+- Solving problems consistently
+- Documenting solutions for **future revision**
+- Tracking long-term progress clearly
+
+We already practice on platforms like **LeetCode** and **GeeksforGeeks**, and this repository acts as a **central notebook** for our learning.
+
+---
+
+## 🤝 Contribution Philosophy
+
+This is not about rushing problem counts.  
+It’s about:
+- Understanding patterns  
+- Writing clean solutions  
+- Building long-term problem-solving intuition  
+
+If you find this repository useful:
+- ⭐ Star the repo  
+- Follow our GitHub profiles  
+- Feel free to explore and learn along with us  
 
 ---
 
 ## 💡 Motivation
-> “Consistency beats intensity.”  
-Even while working on development projects, I’ll keep sharpening my problem-solving skills one step at a time.
 
-📂 dsa-journey
- ┣ 📂 Easy
- ┣ 📂 Medium
- ┣ 📂 Hard
- ┗ 📄 README.md
+> **“Consistency beats intensity.”**
 
+Even on busy days with development work, we make sure to move **one step forward every day** in DSA.
 
+---
 
+Happy Coding 🚀  
+Let’s keep learning.
+```
+
+---
