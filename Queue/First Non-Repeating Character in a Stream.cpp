@@ -3,7 +3,7 @@
 Platform   : GeeksforGeeks
 Problem    : First Non-Repeating Character in a Stream
 Link       : https://www.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1
-Difficulty : Easy (Conceptually IMPORTANT)
+Difficulty : medium (Conceptually IMPORTANT)
 ------------------------------------------------------------
 
 🧠 WHY I GOT STUCK (REAL LEARNING):
