@@ -6,7 +6,7 @@ Link       : https://www.geeksforgeeks.org/problems/first-non-repeating-characte
 Difficulty : medium (Conceptually IMPORTANT)
 ------------------------------------------------------------
 
-🧠 WHY I GOT STUCK (REAL LEARNING):
+ WHY I GOT STUCK (REAL LEARNING):
 The keyword "prefix / stream" was the turning point.
 
 At first, only hashing came to mind.
@@ -16,7 +16,7 @@ The moment "stream" clicked,
 QUEUE became mandatory.
 
 ------------------------------------------------------------
-🔑 CORE INSIGHT:
+ CORE INSIGHT:
 For every prefix of the string, we need:
 1. Frequency of characters  → unordered_map
 2. Order of appearance      → queue
@@ -28,7 +28,7 @@ Queue answers:
 "Which character came first and is still valid?"
 
 ------------------------------------------------------------
-🛠️ APPROACH:
+ APPROACH:
 1. Traverse the string character by character (stream).
 2. Increase frequency using unordered_map.
 3. Push character into queue.
@@ -40,18 +40,18 @@ Queue answers:
 ⏱ Time Complexity:
 O(n) — each character enters and leaves queue once.
 
-💾 Space Complexity:
+ Space Complexity:
 O(1) — since only lowercase English characters.
 
 ------------------------------------------------------------
-🧠 KEY TAKEAWAY:
+ KEY TAKEAWAY:
 Whenever you see:
 - prefix
 - stream
 - first non-repeating
 
 Think immediately:
-👉 unordered_map + queue
+ unordered_map + queue
 
 ------------------------------------------------------------
 */
