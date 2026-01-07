@@ -1,0 +1,62 @@
+/*
+=========================================================
+NOTES: Subarrays with Exactly K Distinct Integers
+=========================================================
+
+❌ Why direct sliding window fails?
+----------------------------------
+When we try to count subarrays directly when distinct == k,
+multiple subarrays ending at the same index get counted again,
+leading to OVERCOUNT.
+
+Example:
+nums = [1,2,1,2], k = 2
+
+At j = 3:
+Valid subarrays:
+[1,2,1,2], [2,1,2], [1,2]
+
+But counting (j - i + 1) blindly also includes:
+[2] ❌ (only 1 distinct)
+
+---------------------------------------------------------
+
+✅ Correct Strategy:
+-------------------
+Instead of counting EXACTLY K directly,
+count using subtraction:
+
+exactlyK = atMost(K) - atMost(K - 1)
+
+---------------------------------------------------------
+
+🧠 atMost(K) Sliding Window Logic:
+---------------------------------
+- Expand right pointer j
+- Track frequency using hashmap
+- If distinct > K → shrink from left
+- At each j, add (j - i + 1)
+
+This counts ALL valid subarrays ending at j with <= K distinct
+
+---------------------------------------------------------
+
+🧮 Mathematical Reason:
+----------------------
+Every subarray with exactly K distinct
+is included in atMost(K)
+but excluded from atMost(K - 1)
+
+So subtraction isolates exactly K
+
+---------------------------------------------------------
+
+📌 Key Takeaways:
+----------------
+✔ Exactly K cannot be solved reliably with a single window
+✔ Difference of two atMost windows is mandatory
+✔ (j - i + 1) works ONLY for atMost problems
+✔ This is a classic interview-level sliding window pattern
+
+=========================================================
+*/
