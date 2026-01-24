@@ -1,0 +1,89 @@
+/*
+=====================================================================
+LeetCode Problem : Minimum Rounds to Complete All Tasks
+Platform         : LeetCode
+Problem Link     : https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/
+
+---------------------------------------------------------------------
+📌 Problem Statement:
+You are given an array `tasks` where each element represents the
+difficulty level of a task.
+
+In one round, you can complete:
+- Either 2 tasks of the same difficulty
+- Or 3 tasks of the same difficulty
+
+Return the minimum number of rounds required to complete all tasks.
+If it is not possible to complete all tasks, return -1.
+
+---------------------------------------------------------------------
+🧠 Key Observations:
+1. Tasks can only be completed in groups of size 2 or 3.
+2. Tasks of different difficulties cannot be grouped together.
+3. If any task appears only once → impossible → return -1.
+4. To minimize rounds:
+   - Prefer groups of 3 (more efficient)
+   - Handle leftover tasks using groups of 2
+
+---------------------------------------------------------------------
+💡 Greedy Strategy:
+For each task frequency `count`:
+- If count == 1 → return -1
+- If count % 3 == 0 → rounds += count / 3
+- Else → rounds += (count / 3) + 1
+
+Why +1?
+Because remaining tasks (2 or 4) can always be formed using groups of 2.
+
+---------------------------------------------------------------------
+✏️ Example:
+tasks = [1,1,1,1]
+Frequency of 1 = 4
+
+4 % 3 = 1
+Rounds = (4 / 3) + 1 = 2
+Groups → (2,2)
+
+---------------------------------------------------------------------
+⏱️ Complexity Analysis:
+Time Complexity  : O(n)
+Space Complexity : O(n)
+
+=====================================================================
+*/
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    int minimumRounds(vector<int>& tasks) {
+        
+        unordered_map<int, int> mp;
+
+        // Count frequency of each task difficulty
+        for (int task : tasks) {
+            mp[task]++;
+        }
+
+        int rounds = 0;
+
+        // Calculate minimum rounds
+        for (auto &it : mp) {
+            int count = it.second;
+
+            // If only one task exists, impossible to form a group
+            if (count == 1)
+                return -1;
+
+            // Prefer groups of 3
+            if (count % 3 == 0) {
+                rounds += count / 3;
+            } else {
+                rounds += (count / 3) + 1;
+            }
+        }
+
+        return rounds;
+    }
+};
