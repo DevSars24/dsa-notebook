@@ -1,0 +1,72 @@
+/*
+--------------------------------------------------------------------
+LeetCode Problem: Minimum Difference Between Highest and Lowest of K Scores
+Link: https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/
+
+Difficulty: Easy
+--------------------------------------------------------------------
+
+🧠 Intuition:
+We need to pick any group of `k` students such that the difference between
+the highest and lowest score is minimized.
+
+Key observation:
+- Once the array is sorted, the minimum difference for any group of size `k`
+  will always lie in a **contiguous subarray of length `k`**.
+
+Why?
+Because sorting puts close values next to each other, and choosing any
+non-contiguous elements would only increase the difference.
+
+--------------------------------------------------------------------
+
+🛠️ Approach:
+1. Sort the array `nums`.
+2. Use a sliding window of size `k`.
+3. For each window:
+   - Lowest score = nums[i]
+   - Highest score = nums[i + k - 1]
+   - Compute difference.
+4. Track the minimum difference across all windows.
+
+--------------------------------------------------------------------
+
+⏱️ Time Complexity:
+- O(n log n) due to sorting.
+
+🧠 Space Complexity:
+- O(1) extra space (ignoring sort space).
+
+--------------------------------------------------------------------
+*/
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    int minimumDifference(vector<int>& nums, int k) {
+        // Edge case: if k == 1, difference is always 0
+        if (k == 1) return 0;
+
+        // Step 1: Sort the scores
+        sort(nums.begin(), nums.end());
+
+        int n = nums.size();
+        int mindiff = INT_MAX;
+
+        // Step 2: Sliding window of size k
+        int i = 0, j = k - 1;
+        while (j < n) {
+            int minE = nums[i];
+            int maxE = nums[j];
+
+            mindiff = min(mindiff, maxE - minE);
+
+            i++;
+            j++;
+        }
+
+        return mindiff;
+    }
+};
