@@ -31,19 +31,6 @@ We are learning and contributing **together**, pushing each other to stay consis
 
 ---
 
-## 📂 Repository Structure
-
-```
-```
-dsa-journey/
-┣ 📂 Easy/    → Beginner-friendly problems with clear logic
-┣ 📂 Medium/  → Intermediate problems and optimised approaches
-┣ 📂 Hard/    → Advanced problems and edge-case heavy solutions
-┗ 📄 README.md
-
-```
-
----
 
 ## 🎯 Purpose
 
