@@ -1,0 +1,110 @@
+/*
+    ============================================================
+    📌 Problem: Power Set (All Possible Subsequences)
+    Platform: GeeksforGeeks
+    Link: https://www.geeksforgeeks.org/problems/power-set4302/1
+    ============================================================
+
+    🧠 Problem Summary:
+    Given a string s, generate all possible NON-EMPTY subsequences
+    (Power Set) in lexicographically sorted order.
+
+    Example:
+    Input:  "abc"
+    Output: a ab abc ac b bc c
+
+    ------------------------------------------------------------
+    💡 Intuition:
+
+    Each character has 2 choices:
+        1) Include it
+        2) Exclude it
+
+    If string length = n
+    Total subsequences = 2^n
+
+    We remove empty string.
+
+    ------------------------------------------------------------
+    🌳 Approach (Backtracking):
+
+    Recursive function solve(index):
+        - Include current character
+        - Backtrack
+        - Exclude current character
+
+    Base Case:
+        If index reaches end:
+            push current string if not empty
+
+    ------------------------------------------------------------
+    ⏱ Time Complexity:
+        O(n * 2^n)
+
+    💾 Space Complexity:
+        O(n * 2^n)
+        (for storing all subsequences)
+    ------------------------------------------------------------
+*/
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+
+    vector<string> result;
+
+    void solve(string &s, string &curr, int idx) {
+
+        // Base case
+        if (idx >= s.length()) {
+            if (!curr.empty())
+                result.push_back(curr);
+            return;
+        }
+
+        // 1️⃣ Include current character
+        curr.push_back(s[idx]);
+        solve(s, curr, idx + 1);
+
+        // 2️⃣ Backtrack
+        curr.pop_back();
+
+        // 3️⃣ Exclude current character
+        solve(s, curr, idx + 1);
+    }
+
+    vector<string> AllPossibleStrings(string s) {
+
+        result.clear();  // Important for multiple test cases
+
+        string curr = "";
+        solve(s, curr, 0);
+
+        sort(result.begin(), result.end());
+
+        return result;
+    }
+};
+
+
+/* ============================================================
+   🔹 Optional Main Function (For Local Testing Only)
+   Remove this part when submitting on GFG
+   ============================================================ */
+
+int main() {
+
+    Solution obj;
+    string s = "abc";
+
+    vector<string> ans = obj.AllPossibleStrings(s);
+
+    cout << "All Non-Empty Subsequences:\n";
+
+    for (auto str : ans)
+        cout << str << endl;
+
+    return 0;
+}
