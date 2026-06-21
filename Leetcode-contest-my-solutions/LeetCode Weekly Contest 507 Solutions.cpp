@@ -1,5 +1,4 @@
-
-```markdown
+```
 # LeetCode Weekly Contest 507 Solutions
 This repository contains optimized solutions, algorithmic explanations, and implementation details for the problems solved in **LeetCode Weekly Contest 507**.
 
